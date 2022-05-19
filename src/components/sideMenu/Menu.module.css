@@ -1,0 +1,114 @@
+.container {
+  width: fit-content;
+  height: 100vh;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 120px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+}
+.wrapper{
+  width: 100%;
+}
+.logo {
+  margin-bottom: 37px;
+  padding: 46px 40px 0px 40px;
+}
+.header_subheader_container {
+  display: flex;
+  flex-direction: column;
+
+}
+.small_navigation {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.63px;
+  color: #b5b5b5;
+  padding-left: 40px;
+  margin-top: 25px;
+}
+.navigation {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  cursor: pointer;
+  list-style: none;
+  text-decoration: none;
+  padding: 15px 0px 15px 40px;
+}
+.navigation:hover{
+  background-color: #fafafa;
+  cursor: pointer;
+}
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: #ececec;
+}
+.mid_navigation_wrapper{
+  padding-bottom: 15px;
+  background-color: #fafafa;
+
+}
+.mid_navigation {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  cursor: pointer;
+  padding: 6px 0px 6px 48px;
+  padding-left: 3rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+
+}
+.mid_navigation:hover{
+  color: #68ac44;
+  cursor: pointer;
+}
+.mid_navigation:hover .bullet_icon{
+  color: #68ac44;
+  cursor: pointer;
+}
+.active_mid_nav{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  cursor: pointer;
+  padding: 6px 0px 6px 48px;
+  padding-left: 3rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #68ac44;
+
+}
+.active_bullet_icon{
+  color: #68ac44;
+  font-size: 6px;
+  margin-right: 10px;
+}
+.bullet_icon{
+  color: #000000;
+  font-size: 6px;
+  margin-right: 10px;
+}
+
+.active{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  cursor: pointer;
+  list-style: none;
+  text-decoration: none;
+  padding: 15px 0px 15px 40px;
+  background-color: #fafafa;
+}
+
+@media only screen and (max-width: 1800px) {
+
+}

@@ -1,0 +1,9 @@
+.container {
+  width: 100%;
+  margin-left: 110px;
+}
+.intro_heading_image_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

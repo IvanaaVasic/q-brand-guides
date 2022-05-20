@@ -1,0 +1,24 @@
+.big_heading {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 44px;
+  color: #000000;
+}
+.regular_heading {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #000000;
+}
+.small_heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  color: #000000;
+}
+.sub_heading {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14.63px;
+  color: #b5b5b5;
+}

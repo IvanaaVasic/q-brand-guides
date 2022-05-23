@@ -17,7 +17,7 @@ const CardContainer = ({ cardInfos, cardType, subText }) => {
         return (
           <div className={CardContainerCSS.card_wrapper} key={info.id}>
             {cardType === "type_stack" && <CardTypeStack info={info} />}
-            {cardType === "type_slack" && <CardTypeScale info={info} />}
+            {cardType === "type_scale" && <CardTypeScale info={info} />}
           </div>
         );
       })}

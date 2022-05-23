@@ -122,7 +122,7 @@ const Typography = () => {
           <div className={TypographyCSS.card_containers}>
             <CardContainer
               cardInfos={typeScaleContainerCardsInfo}
-              cardType={"type_slack"}
+              cardType={"type_scale"}
               subText={"FONT SIZE / LINESPACING – CLASSIFICATION"}
             />
           </div>

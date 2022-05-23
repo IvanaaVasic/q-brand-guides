@@ -103,3 +103,19 @@
   text-align: justify;
   color: #ffffff;
 }
+.pairing_wrapper {
+  padding: 22px 70px 20px 20px;
+  background: #ffffff;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: space-between;
+}
+.pairing_info_wrapper {
+  width: 448px;
+  /* height: 125px; */
+  display: flex;
+  flex-direction: column;
+}
+.pairing_margin {
+  margin-bottom: 13px;
+}

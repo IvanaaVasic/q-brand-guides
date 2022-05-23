@@ -48,3 +48,13 @@
 .color_container_wrapper {
   margin-bottom: 123px;
 }
+.pairing_section {
+  height: auto;
+}
+.pairing_heading {
+  width: 53.44vw;
+  margin-bottom: 73px;
+}
+.pairing_container_wrapper {
+  margin-bottom: 143px;
+}

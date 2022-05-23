@@ -119,6 +119,25 @@ const Typography = () => {
       border: "",
     },
   ];
+  const pairingSectionInfo = {
+    heading: "Example pairings",
+    paragraph: "Here are some examples of typographic pairs that we commonly use on our marketing website.",
+  };
+
+  const pairingContainerCardsInfo = [
+    {
+      subtitle: "HEADLINE 1 + HEADLINE 3",
+      big_headline: "Watch it in real time or on your own time",
+      small_headline: "Quantox builds software for better customer relationships",
+      id: 1,
+    },
+    {
+      subtitle: "HEADLINE 2 + PARAGRAPH",
+      big_headline: "Watch it in real time or on your own time",
+      small_headline: "Quantox builds software for better customer relationships",
+      id: 2,
+    },
+  ];
 
   return (
     <div className={TypographyCSS.container}>
@@ -180,6 +199,17 @@ const Typography = () => {
         <div className={TypographyCSS.color_container_wrapper}>
           <div className={TypographyCSS.card_containers}>
             <CardContainer cardInfos={colorContainerCardsInfo} cardType={"color"} subText={""} />
+          </div>
+        </div>
+        <Line />
+      </section>
+      <section className={TypographyCSS.pairing_section}>
+        <div className={TypographyCSS.pairing_heading}>
+          <HeadingDescription heading={pairingSectionInfo.heading} paragraph={pairingSectionInfo.paragraph} />
+        </div>
+        <div className={TypographyCSS.pairing_container_wrapper}>
+          <div className={TypographyCSS.pairing_containers}>
+            <CardContainer cardInfos={pairingContainerCardsInfo} cardType={"pairing"} subText={""} />
           </div>
         </div>
         <Line />

@@ -138,7 +138,20 @@ const Typography = () => {
       id: 2,
     },
   ];
-
+  const lineWidthSectionInfo = {
+    heading: "Line width",
+    paragraph:
+      "Be conscious of the space between the beginning and end of a text box. It can be the difference between content that's easy to read and content that makes you cross-eyed.",
+  };
+  const lineWidthContainerCardsInfo = [
+    {
+      headline:
+        "There’s an art to eating well and wisely, and membership service NatureBox saw an opportunity to make it easy. There’s an art to eating well and wisely, and membership service NatureBox saw an opportunity to make it easy.",
+      paragraph:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      id: 1,
+    },
+  ];
   return (
     <div className={TypographyCSS.container}>
       <section className={TypographyCSS.intro_heading_image_wrapper}>
@@ -213,6 +226,16 @@ const Typography = () => {
           </div>
         </div>
         <Line />
+      </section>
+      <section className={TypographyCSS.line_width_section}>
+        <div className={TypographyCSS.line_width_heading}>
+          <HeadingDescription heading={lineWidthSectionInfo.heading} paragraph={lineWidthSectionInfo.paragraph} />
+        </div>
+        <div className={TypographyCSS.line_width_container_wrapper}>
+          <div className={TypographyCSS.line_width_containers}>
+            <CardContainer cardInfos={lineWidthContainerCardsInfo} cardType={"line_width"} subText={""} />
+          </div>
+        </div>
       </section>
     </div>
   );

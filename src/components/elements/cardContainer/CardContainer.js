@@ -1,5 +1,6 @@
 import React from "react";
 import CardColor from "../cards/CardColor";
+import CardLineWidth from "../cards/CardLineWidth";
 import CardPairing from "../cards/CardPairing";
 import CardTypeScale from "../cards/CardTypeScale";
 import CardTypeStack from "../cards/CardTypeStack";
@@ -22,6 +23,7 @@ const CardContainer = ({ cardInfos, cardType, subText }) => {
             {cardType === "type_scale" && <CardTypeScale info={info} />}
             {cardType === "color" && <CardColor info={info} />}
             {cardType === "pairing" && <CardPairing info={info} />}
+            {cardType === "line_width" && <CardLineWidth info={info} />}
           </div>
         );
       })}

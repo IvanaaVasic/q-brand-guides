@@ -112,10 +112,17 @@
 }
 .pairing_info_wrapper {
   width: 448px;
-  /* height: 125px; */
   display: flex;
   flex-direction: column;
 }
 .pairing_margin {
   margin-bottom: 13px;
+}
+.line_width_wrapper {
+  padding: 83px 52px 61px 78px;
+  display: flex;
+  flex-direction: column;
+}
+.line_width_heading {
+  margin-bottom: 60px;
 }

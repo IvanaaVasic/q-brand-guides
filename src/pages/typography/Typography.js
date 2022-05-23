@@ -162,7 +162,7 @@ const Typography = () => {
         />
         <Illustration image={IllustrationImage} />
       </section>
-      <section className={TypographyCSS.type_stack_section}>
+      <section className={TypographyCSS.type_stack_section} id="type-stack">
         <div className={TypographyCSS.type_stack_heading}>
           <HeadingDescription heading={typeStackSectionInfo.heading} paragraph={typeStackSectionInfo.paragraph} />
         </div>
@@ -184,7 +184,7 @@ const Typography = () => {
         </div>
         <Line />
       </section>
-      <section className={TypographyCSS.type_scale_section}>
+      <section className={TypographyCSS.type_scale_section} id="type-scale">
         <div className={TypographyCSS.type_scale_heading}>
           <HeadingDescription heading={typeScaleSectionInfo.heading} paragraph={typeScaleSectionInfo.paragraph} />
         </div>
@@ -205,7 +205,7 @@ const Typography = () => {
         </div>
         <Line />
       </section>
-      <section className={TypographyCSS.color_section}>
+      <section className={TypographyCSS.color_section} id="color">
         <div className={TypographyCSS.color_heading}>
           <HeadingDescription heading={colorSectionInfo.heading} paragraph={colorSectionInfo.paragraph} />
         </div>
@@ -216,7 +216,7 @@ const Typography = () => {
         </div>
         <Line />
       </section>
-      <section className={TypographyCSS.pairing_section}>
+      <section className={TypographyCSS.pairing_section} id="example-pairings">
         <div className={TypographyCSS.pairing_heading}>
           <HeadingDescription heading={pairingSectionInfo.heading} paragraph={pairingSectionInfo.paragraph} />
         </div>
@@ -227,7 +227,7 @@ const Typography = () => {
         </div>
         <Line />
       </section>
-      <section className={TypographyCSS.line_width_section}>
+      <section className={TypographyCSS.line_width_section} id="line-width">
         <div className={TypographyCSS.line_width_heading}>
           <HeadingDescription heading={lineWidthSectionInfo.heading} paragraph={lineWidthSectionInfo.paragraph} />
         </div>

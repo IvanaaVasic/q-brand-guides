@@ -15,33 +15,33 @@ export const SidebarDataDesign = [
     subNav: [
       {
         title: "Type stack",
-        path: "/reports/reports1",
+        path: "/design/typography#type-stack",
         icon: <VscCircleFilled />,
         cName: "sub-nav",
         id: 1,
       },
       {
         title: "Type scale",
-        path: "/reports/reports2",
+        path: "/design/typography#type-scale",
         icon: <VscCircleFilled />,
         cName: "sub-nav",
         id: 2,
       },
       {
         title: "Color in typography",
-        path: "/reports/reports3",
+        path: "/design/typography#color",
         icon: <VscCircleFilled />,
         id: 3,
       },
       {
         title: "Example pairings",
-        path: "/reports/reports3",
+        path: "/design/typography#example-pairings",
         icon: <VscCircleFilled />,
         id: 4,
       },
       {
         title: "Line width",
-        path: "/reports/reports3",
+        path: "/design/typography#line-width",
         icon: <VscCircleFilled />,
         id: 5,
       },

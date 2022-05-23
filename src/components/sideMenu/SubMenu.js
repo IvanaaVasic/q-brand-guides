@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import MenuCSS from "./Menu.module.css";
+import { HashLink } from "react-router-hash-link";
 
 const SubMenu = ({ item, setupActiveId, activeState }) => {
   const [subnav, setSubnav] = useState(false);
@@ -34,7 +35,8 @@ const SubMenu = ({ item, setupActiveId, activeState }) => {
         <div className={MenuCSS.mid_navigation_wrapper}>
           {item.subNav.map((item, index) => {
             return (
-              <Link
+              <HashLink
+                smooth
                 to={item.path}
                 key={index}
                 className={activeId === item.id ? MenuCSS.active_mid_nav : MenuCSS.mid_navigation}
@@ -44,7 +46,7 @@ const SubMenu = ({ item, setupActiveId, activeState }) => {
                   {item.icon}
                 </span>
                 <span>{item.title}</span>
-              </Link>
+              </HashLink>
             );
           })}
         </div>

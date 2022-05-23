@@ -75,18 +75,62 @@ const Typography = () => {
       id: 5,
     },
   ];
+  const colorSectionInfo = {
+    heading: "Color in typography",
+    paragraph:
+      "The interface colors are the main sets of colors for a general website layout. Colors that pertain to navigations, section modules, general typography, and footers are in the realm of “interface colors.”",
+  };
+
+  const colorContainerCardsInfo = [
+    {
+      subtitle: "HEADLINES, PARAGRAPHS",
+      company_name: "Quantox",
+      hex: "#000000",
+      id: 1,
+      background: "#FFFFFF",
+      color: "#000000",
+      border: " 1px solid #EEEEEE",
+    },
+    {
+      subtitle: "FOOTER",
+      company_name: "Quantox",
+      hex: "#6E6F72",
+      id: 2,
+      background: "#6E6F72",
+      color: "#FFFFFF",
+      border: "",
+    },
+    {
+      subtitle: "CAPTIONS",
+      company_name: "Quantox",
+      hex: "#B5B5B5",
+      id: 3,
+      background: "#FFFFFF",
+      color: "#B5B5B5",
+      border: " 1px solid #EEEEEE",
+    },
+    {
+      subtitle: "CAPTIONS",
+      company_name: "Quantox",
+      hex: "#98CA3E",
+      id: 4,
+      background: "#98CA3E",
+      color: "#FFFFFF",
+      border: "",
+    },
+  ];
 
   return (
     <div className={TypographyCSS.container}>
-      <div className={TypographyCSS.intro_heading_image_wrapper}>
+      <section className={TypographyCSS.intro_heading_image_wrapper}>
         <HeadingIntro
           smallHeading={headingInformation.smallHeading}
           heading={headingInformation.heading}
           description={headingInformation.description}
         />
         <Illustration image={IllustrationImage} />
-      </div>
-      <div className={TypographyCSS.type_stack_section}>
+      </section>
+      <section className={TypographyCSS.type_stack_section}>
         <div className={TypographyCSS.type_stack_heading}>
           <HeadingDescription heading={typeStackSectionInfo.heading} paragraph={typeStackSectionInfo.paragraph} />
         </div>
@@ -107,8 +151,8 @@ const Typography = () => {
           </div>
         </div>
         <Line />
-      </div>
-      <div className={TypographyCSS.type_scale_section}>
+      </section>
+      <section className={TypographyCSS.type_scale_section}>
         <div className={TypographyCSS.type_scale_heading}>
           <HeadingDescription heading={typeScaleSectionInfo.heading} paragraph={typeScaleSectionInfo.paragraph} />
         </div>
@@ -128,7 +172,18 @@ const Typography = () => {
           </div>
         </div>
         <Line />
-      </div>
+      </section>
+      <section className={TypographyCSS.color_section}>
+        <div className={TypographyCSS.color_heading}>
+          <HeadingDescription heading={colorSectionInfo.heading} paragraph={colorSectionInfo.paragraph} />
+        </div>
+        <div className={TypographyCSS.color_container_wrapper}>
+          <div className={TypographyCSS.card_containers}>
+            <CardContainer cardInfos={colorContainerCardsInfo} cardType={"color"} subText={""} />
+          </div>
+        </div>
+        <Line />
+      </section>
     </div>
   );
 };

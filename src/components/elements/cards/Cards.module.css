@@ -79,3 +79,27 @@
   line-height: 15px;
   color: #000000;
 }
+.color_wrapper {
+  padding: 22px 20px;
+  background: #ffffff;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: space-between;
+}
+.color_info_wrapper {
+  width: 63%;
+  height: 125px;
+  background-color: red;
+  padding: 0px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.color_company_name,
+.color_hex {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  color: #ffffff;
+}

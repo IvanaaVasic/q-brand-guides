@@ -4,3 +4,9 @@
   padding: 25px 20px;
   background-color: #f8f8f8;
 }
+.card_wrapper:not(:last-child) {
+  margin-bottom: 24px;
+}
+.subheading_wrapper {
+  margin-bottom: 17px;
+}

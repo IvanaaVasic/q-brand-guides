@@ -15,3 +15,9 @@
   width: 53.44vw;
   margin-bottom: 37px;
 }
+.card_containers:first-child {
+  margin-bottom: 16px;
+}
+.type_stack_card_container_wrapper {
+  margin-bottom: 120px;
+}

@@ -1,5 +1,6 @@
 import React from "react";
-import CartTypeStack from "../cards/CardTypeStack";
+import CardTypeScale from "../cards/CardTypeScale";
+import CardTypeStack from "../cards/CardTypeStack";
 import SubHeading from "../headings/SubHeading";
 import CardContainerCSS from "./CardContainer.module.css";
 
@@ -14,8 +15,9 @@ const CardContainer = ({ cardInfos, cardType, subText }) => {
 
       {cardInfos.map((info) => {
         return (
-          <div className={CardContainerCSS.card_wrapper}>
-            {cardType === "type_stack" && <CartTypeStack info={info} />}
+          <div className={CardContainerCSS.card_wrapper} key={info.id}>
+            {cardType === "type_stack" && <CardTypeStack info={info} />}
+            {cardType === "type_slack" && <CardTypeScale info={info} />}
           </div>
         );
       })}

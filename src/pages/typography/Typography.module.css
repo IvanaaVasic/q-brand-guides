@@ -15,9 +15,26 @@
   width: 53.44vw;
   margin-bottom: 37px;
 }
-.card_containers:first-child {
+.card_containers:not(:last-child) {
   margin-bottom: 16px;
 }
 .type_stack_card_container_wrapper {
   margin-bottom: 120px;
+}
+.type_scale_section {
+  height: auto;
+}
+.type_scale_heading {
+  width: 53.44vw;
+  margin-bottom: 61px;
+}
+.type_scale_subheading_wrapper {
+  width: 53.44vw;
+  margin-bottom: 52px;
+}
+.type_scale_subheading {
+  margin-bottom: 15px;
+}
+.type_scale_card_container_wrapper {
+  margin-bottom: 127px;
 }

@@ -6,4 +6,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 118px;
+}
+.type_stack_section {
+  height: auto;
+}
+.type_stack_heading {
+  width: 53.44vw;
+  margin-bottom: 37px;
 }

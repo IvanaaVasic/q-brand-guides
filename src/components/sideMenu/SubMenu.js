@@ -13,9 +13,13 @@ const SubMenu = ({ item, setupActiveId, activeState }) => {
     if (item.subNav) {
       showSubnav();
     }
+
     // toggleClass();
+    // setSubnav(false);
+    console.log(subnav);
     setupActiveId(0);
     setupActiveId(item.id);
+    showSubnav();
   };
 
   return (

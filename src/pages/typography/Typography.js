@@ -10,6 +10,7 @@ import TypeStackImageRegular from "../../assets/type_stack_regular.png";
 import Line from "../../components/elements/line/Line";
 import SmallHeading from "../../components/elements/headings/SmallHeading";
 import Paragraph from "../../components/elements/paragraph/Paragraph";
+import Footer from "../../components/footer/Footer";
 
 const Typography = () => {
   const headingInformation = {
@@ -236,6 +237,9 @@ const Typography = () => {
             <CardContainer cardInfos={lineWidthContainerCardsInfo} cardType={"line_width"} subText={""} />
           </div>
         </div>
+      </section>
+      <section className={TypographyCSS.footer}>
+        <Footer />
       </section>
     </div>
   );

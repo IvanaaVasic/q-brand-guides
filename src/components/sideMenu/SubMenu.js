@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import MenuCSS from "./Menu.module.css";
 import { HashLink } from "react-router-hash-link";
@@ -7,19 +7,20 @@ const SubMenu = ({ item, setupActiveId, activeState }) => {
   const [subnav, setSubnav] = useState(false);
   const showSubnav = () => setSubnav(!subnav);
   const [activeId, setActiveId] = useState();
-  // const [isActive, setActive] = useState(false);
-  // const toggleClass = () => setActive(!isActive);
+
+  useEffect(() => {
+    if (activeState !== item.id) {
+      setSubnav(false);
+    } else {
+      setSubnav(true);
+    }
+  }, [activeState, item.id]);
+
   const handleNav = () => {
     if (item.subNav) {
       showSubnav();
     }
-
-    // toggleClass();
-    // setSubnav(false);
-    console.log(subnav);
-    setupActiveId(0);
     setupActiveId(item.id);
-    showSubnav();
   };
 
   return (

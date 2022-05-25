@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import MenuCSS from "./Menu.module.css";
 import { HashLink } from "react-router-hash-link";
+import { VscCircleFilled } from "react-icons/vsc";
 
 const SubMenu = ({ item, setupActiveId, activeState }) => {
   const [subnav, setSubnav] = useState(false);
@@ -47,7 +48,7 @@ const SubMenu = ({ item, setupActiveId, activeState }) => {
                 onClick={() => setActiveId(item.id)}
               >
                 <span className={activeId === item.id ? MenuCSS.active_bullet_icon : MenuCSS.bullet_icon}>
-                  {item.icon}
+                  <VscCircleFilled />
                 </span>
                 <span>{item.title}</span>
               </HashLink>

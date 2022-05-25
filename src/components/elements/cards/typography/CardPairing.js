@@ -1,5 +1,5 @@
 import React from "react";
-import SubHeading from "../headings/SubHeading";
+import SubHeading from "../../headings/SubHeading";
 import CardCSS from "./Cards.module.css";
 
 const CardPairing = ({ info }) => {

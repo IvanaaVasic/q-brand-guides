@@ -1,9 +1,9 @@
 import React from "react";
-import CardColor from "../cards/CardColor";
-import CardLineWidth from "../cards/CardLineWidth";
-import CardPairing from "../cards/CardPairing";
-import CardTypeScale from "../cards/CardTypeScale";
-import CardTypeStack from "../cards/CardTypeStack";
+import CardColor from "../cards/typography/CardColor";
+import CardLineWidth from "../cards/typography/CardLineWidth";
+import CardPairing from "../cards/typography/CardPairing";
+import CardTypeScale from "../cards/typography/CardTypeScale";
+import CardTypeStack from "../cards/typography/CardTypeStack";
 import SubHeading from "../headings/SubHeading";
 import CardContainerCSS from "./CardContainer.module.css";
 

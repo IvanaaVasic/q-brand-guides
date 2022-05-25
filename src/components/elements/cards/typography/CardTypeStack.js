@@ -1,7 +1,6 @@
 import React from "react";
-import Paragraph from "../paragraph/Paragraph";
+import Paragraph from "../../paragraph/Paragraph";
 import CardCSS from "./Cards.module.css";
-// import TypeStackImage from "../../../assets/type_stack_bold.png";
 
 const CartTypeStack = ({ info }) => {
   return (

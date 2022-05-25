@@ -31,7 +31,6 @@ const SubMenu = ({ item, setupActiveId, activeState }) => {
         className={activeState === item.id ? MenuCSS.active : MenuCSS.navigation}
       >
         <div>
-          {item.icon}
           <span>{item.title}</span>
         </div>
       </Link>

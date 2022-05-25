@@ -15,7 +15,7 @@ const Footer = () => {
           <img src={InstagramIcon} alt="instagram_logo" />
           <img src={LinkedInIcon} alt="linkedIn_logo" />
         </div>
-        <p className={FooterCSS.rights}>Quantox Technology 2022. All rights reserved.</p>
+        <p className={FooterCSS.rights}>Quantox Technology {new Date().getFullYear()}. All rights reserved.</p>
       </div>
     </div>
   );

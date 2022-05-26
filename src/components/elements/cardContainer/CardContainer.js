@@ -1,13 +1,10 @@
 import React from "react";
-import CardColor from "../cards/typography/CardColor";
-import CardLineWidth from "../cards/typography/CardLineWidth";
-import CardPairing from "../cards/typography/CardPairing";
-import CardTypeScale from "../cards/typography/CardTypeScale";
-import CardTypeStack from "../cards/typography/CardTypeStack";
 import SubHeading from "../headings/SubHeading";
 import CardContainerCSS from "./CardContainer.module.css";
+import { createContext } from "react";
+export const CardContext = createContext();
 
-const CardContainer = ({ cardInfos, cardType, subText }) => {
+const CardContainer = ({ cardInfos, subText, children }) => {
   return (
     <div className={CardContainerCSS.container}>
       {subText !== "" && (
@@ -18,13 +15,11 @@ const CardContainer = ({ cardInfos, cardType, subText }) => {
 
       {cardInfos.map((info) => {
         return (
-          <div className={CardContainerCSS.card_wrapper} key={info.id}>
-            {cardType === "type_stack" && <CardTypeStack info={info} />}
-            {cardType === "type_scale" && <CardTypeScale info={info} />}
-            {cardType === "color" && <CardColor info={info} />}
-            {cardType === "pairing" && <CardPairing info={info} />}
-            {cardType === "line_width" && <CardLineWidth info={info} />}
-          </div>
+          <CardContext.Provider value={info} key={info.id}>
+            <div className={CardContainerCSS.card_wrapper} key={info.id}>
+              {children}
+            </div>
+          </CardContext.Provider>
         );
       })}
     </div>

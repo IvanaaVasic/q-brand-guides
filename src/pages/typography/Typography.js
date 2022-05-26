@@ -11,6 +11,11 @@ import Line from "../../components/elements/line/Line";
 import SmallHeading from "../../components/elements/headings/SmallHeading";
 import Paragraph from "../../components/elements/paragraph/Paragraph";
 import Footer from "../../components/footer/Footer";
+import CardTypeStack from "../../components/elements/cards/typography/CardTypeStack";
+import CardTypeScale from "../../components/elements/cards/typography/CardTypeScale";
+import CardColor from "../../components/elements/cards/typography/CardColor";
+import CardLineWidth from "../../components/elements/cards/typography/CardLineWidth";
+import CardPairing from "../../components/elements/cards/typography/CardPairing";
 
 const Typography = () => {
   const headingInformation = {
@@ -169,18 +174,14 @@ const Typography = () => {
         </div>
         <div className={TypographyCSS.type_stack_card_container_wrapper}>
           <div className={TypographyCSS.card_containers}>
-            <CardContainer
-              cardInfos={typeStackFirstContainerCardsInfo}
-              cardType={"type_stack"}
-              subText={"TYPE STACK"}
-            />
+            <CardContainer cardInfos={typeStackFirstContainerCardsInfo} subText={"TYPE STACK"}>
+              <CardTypeStack />
+            </CardContainer>
           </div>
           <div className={TypographyCSS.card_containers}>
-            <CardContainer
-              cardInfos={typeStackSecondContainerCardsInfo}
-              cardType={"type_stack"}
-              subText={"TYPE STACK"}
-            />
+            <CardContainer cardInfos={typeStackSecondContainerCardsInfo} subText={"TYPE STACK"}>
+              <CardTypeStack />
+            </CardContainer>
           </div>
         </div>
         <Line />
@@ -197,11 +198,9 @@ const Typography = () => {
         </div>
         <div className={TypographyCSS.type_scale_card_container_wrapper}>
           <div className={TypographyCSS.card_containers}>
-            <CardContainer
-              cardInfos={typeScaleContainerCardsInfo}
-              cardType={"type_scale"}
-              subText={"FONT SIZE / LINESPACING – CLASSIFICATION"}
-            />
+            <CardContainer cardInfos={typeScaleContainerCardsInfo} subText={"FONT SIZE / LINESPACING – CLASSIFICATION"}>
+              <CardTypeScale />
+            </CardContainer>
           </div>
         </div>
         <Line />
@@ -212,7 +211,9 @@ const Typography = () => {
         </div>
         <div className={TypographyCSS.color_container_wrapper}>
           <div className={TypographyCSS.card_containers}>
-            <CardContainer cardInfos={colorContainerCardsInfo} cardType={"color"} subText={""} />
+            <CardContainer cardInfos={colorContainerCardsInfo} subText={""}>
+              <CardColor />
+            </CardContainer>
           </div>
         </div>
         <Line />
@@ -223,7 +224,9 @@ const Typography = () => {
         </div>
         <div className={TypographyCSS.pairing_container_wrapper}>
           <div className={TypographyCSS.pairing_containers}>
-            <CardContainer cardInfos={pairingContainerCardsInfo} cardType={"pairing"} subText={""} />
+            <CardContainer cardInfos={pairingContainerCardsInfo} subText={""}>
+              <CardPairing />
+            </CardContainer>
           </div>
         </div>
         <Line />
@@ -234,7 +237,9 @@ const Typography = () => {
         </div>
         <div className={TypographyCSS.line_width_container_wrapper}>
           <div className={TypographyCSS.line_width_containers}>
-            <CardContainer cardInfos={lineWidthContainerCardsInfo} cardType={"line_width"} subText={""} />
+            <CardContainer cardInfos={lineWidthContainerCardsInfo} subText={""}>
+              <CardLineWidth />
+            </CardContainer>
           </div>
         </div>
       </section>

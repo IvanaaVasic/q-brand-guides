@@ -1,8 +1,12 @@
 import React from "react";
 import Paragraph from "../../paragraph/Paragraph";
 import CardCSS from "./Cards.module.css";
+import { useContext } from "react";
+import { CardContext } from "../../cardContainer/CardContainer";
 
-const CartTypeStack = ({ info }) => {
+const CartTypeStack = () => {
+  const info = useContext(CardContext);
+
   return (
     <div className={CardCSS.type_stack_wrapper}>
       <div className={CardCSS.type_stack_info_wrapper}>

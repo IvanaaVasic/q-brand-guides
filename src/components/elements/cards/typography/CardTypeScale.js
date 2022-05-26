@@ -1,8 +1,12 @@
 import React from "react";
 import SubHeading from "../../headings/SubHeading";
 import CardCSS from "./Cards.module.css";
+import { useContext } from "react";
+import { CardContext } from "../../cardContainer/CardContainer";
 
-const CardTypeScale = ({ info }) => {
+const CardTypeScale = () => {
+  const info = useContext(CardContext);
+
   return (
     <div className={CardCSS.type_scale_wrapper}>
       <div className={CardCSS.type_scale_subhead_wrapper}>

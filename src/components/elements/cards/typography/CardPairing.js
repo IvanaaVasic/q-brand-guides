@@ -1,8 +1,12 @@
 import React from "react";
 import SubHeading from "../../headings/SubHeading";
 import CardCSS from "./Cards.module.css";
+import { useContext } from "react";
+import { CardContext } from "../../cardContainer/CardContainer";
 
-const CardPairing = ({ info }) => {
+const CardPairing = () => {
+  const info = useContext(CardContext);
+
   return (
     <div className={CardCSS.pairing_wrapper}>
       <SubHeading text={info.subtitle} />

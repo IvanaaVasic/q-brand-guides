@@ -4,17 +4,17 @@ import SubHeading from "../elements/headings/SubHeading";
 import BigHeading from "../elements/headings/BigHeading";
 import Paragraph from "../elements/paragraph/Paragraph";
 
-const HeadingIntro = ({ smallHeading, heading, description }) => {
+const HeadingIntro = ({ info }) => {
   return (
     <div className={HeadingIntroCSS.wrapper}>
       <div className={HeadingIntroCSS.sub_heading}>
-        <SubHeading text={smallHeading} />
+        <SubHeading text={info.smallHeading} />
       </div>
       <div className={HeadingIntroCSS.heading}>
-        <BigHeading text={heading} />
+        <BigHeading text={info.heading} />
       </div>
       <div className={HeadingIntroCSS.description}>
-        <Paragraph text={description} />
+        <Paragraph text={info.description} />
       </div>
     </div>
   );

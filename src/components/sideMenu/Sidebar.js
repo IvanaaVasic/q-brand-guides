@@ -19,7 +19,7 @@ const Sidebar = () => {
   return (
     <div className={MenuCSS.container}>
       <div className={MenuCSS.mobileNav}>
-        <img src={LogoMobileNav} alt="logo mobile navigation" />
+        <img src={LogoMobileNav} alt="logo mobile navigation" className={MenuCSS.logo_mobile} />
         <span className={MenuCSS.hamburger} onClick={toggleMobileNav}>
           <GiHamburgerMenu />
         </span>

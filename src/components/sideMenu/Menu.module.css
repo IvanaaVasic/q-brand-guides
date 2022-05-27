@@ -136,9 +136,12 @@
   }
   .hamburger {
     cursor: pointer;
-    font-size: 40px;
+    font-size: 30px;
   }
   .logo {
     display: none;
+  }
+  .logo_mobile {
+    width: 200px;
   }
 }

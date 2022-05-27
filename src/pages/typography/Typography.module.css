@@ -103,4 +103,13 @@
   .type_stack_card_container_wrapper {
     margin-bottom: 60px;
   }
+  .type_scale_card_container_wrapper {
+    margin-bottom: 65px;
+  }
+  .color_container_wrapper {
+    margin-bottom: 60px;
+  }
+  .pairing_container_wrapper {
+    margin-bottom: 70px;
+  }
 }

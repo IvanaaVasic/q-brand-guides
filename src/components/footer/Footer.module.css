@@ -30,3 +30,14 @@
     text-align: center;
   }
 }
+@media only screen and (max-width: 770px) {
+  .social_media_icon_wrapper img {
+    width: 20px;
+  }
+  .social_media_icon_wrapper {
+    width: 100px;
+  }
+  .footer_logo {
+    width: 200px;
+  }
+}

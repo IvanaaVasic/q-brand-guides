@@ -88,7 +88,6 @@
 .color_info_wrapper {
   width: 63%;
   height: 125px;
-  background-color: red;
   padding: 0px 25px;
   display: flex;
   justify-content: space-between;
@@ -143,5 +142,26 @@
   }
   .type_stack_image_wrapper {
     width: 100%;
+  }
+  .type_stack_info_wrapper {
+    margin-bottom: 20px;
+  }
+  .type_scale_headline1 {
+    word-wrap: break-word;
+  }
+  .color_wrapper {
+    flex-direction: column;
+  }
+  .color_info_wrapper {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .pairing_wrapper {
+    flex-direction: column;
+    padding: 22px 20px 20px 20px;
+  }
+  .pairing_info_wrapper {
+    width: auto;
+    margin-top: 20px;
   }
 }

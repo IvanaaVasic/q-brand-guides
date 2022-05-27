@@ -20,10 +20,12 @@ const SubMenu = ({ item, setupActiveId, activeState, setIsNavExpanded, toggleMob
   const handleNav = () => {
     if (item.subNav) {
       showSubnav();
-    } else if (!item.subNav) {
-      setIsNavExpanded(false);
+    } else if (item.title === "Typography") {
+      setIsNavExpanded(true);
+    } else if (item.title !== "Typography") {
+      setupActiveId(item.id);
+      toggleMobileNav();
     }
-    setupActiveId(item.id);
   };
 
   return (

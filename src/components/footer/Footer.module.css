@@ -16,3 +16,17 @@
 .rights {
   margin-top: 13px;
 }
+@media only screen and (max-width: 770px) {
+  .container {
+    flex-direction: column;
+  }
+  .social_media_rights_container {
+    align-items: center;
+  }
+  .footer_logo {
+    margin-bottom: 30px;
+  }
+  .rights {
+    text-align: center;
+  }
+}

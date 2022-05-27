@@ -31,88 +31,90 @@ import { LineWidthCardsInfo } from "../../config/typography/cardsInformation/Lin
 const Typography = () => {
   return (
     <div className={TypographyCSS.container}>
-      <section className={TypographyCSS.intro_heading_image_wrapper}>
-        <HeadingIntro info={HeadingInformation} />
-        <Illustration image={IllustrationImage} />
-      </section>
-      <section className={TypographyCSS.type_stack_section} id="type-stack">
-        <div className={TypographyCSS.type_stack_heading}>
-          <HeadingDescription info={TypeStackHeading} />
-        </div>
-        <div className={TypographyCSS.type_stack_card_container_wrapper}>
-          <div className={TypographyCSS.card_containers}>
-            <CardContainer cardInfos={TypeStackFirstContainerCardsInfo} subText={"TYPE STACK"}>
-              <CardTypeStack />
-            </CardContainer>
+      <div className={TypographyCSS.wrapper}>
+        <section className={TypographyCSS.intro_heading_image_wrapper}>
+          <HeadingIntro info={HeadingInformation} />
+          <Illustration image={IllustrationImage} />
+        </section>
+        <section className={`${TypographyCSS.type_stack_section} ${TypographyCSS.section}`} id="type-stack">
+          <div className={TypographyCSS.type_stack_heading}>
+            <HeadingDescription info={TypeStackHeading} />
           </div>
-          <div className={TypographyCSS.card_containers}>
-            <CardContainer cardInfos={TypeStackSecondContainerCardsInfo} subText={"TYPE STACK"}>
-              <CardTypeStack />
-            </CardContainer>
+          <div className={TypographyCSS.type_stack_card_container_wrapper}>
+            <div className={TypographyCSS.card_containers}>
+              <CardContainer cardInfos={TypeStackFirstContainerCardsInfo} subText={"TYPE STACK"}>
+                <CardTypeStack />
+              </CardContainer>
+            </div>
+            <div className={TypographyCSS.card_containers}>
+              <CardContainer cardInfos={TypeStackSecondContainerCardsInfo} subText={"TYPE STACK"}>
+                <CardTypeStack />
+              </CardContainer>
+            </div>
           </div>
-        </div>
+        </section>
         <Line />
-      </section>
-      <section className={TypographyCSS.type_scale_section} id="type-scale">
-        <div className={TypographyCSS.type_scale_heading}>
-          <HeadingDescription info={TypeScaleHeading} />
-        </div>
-        <div className={TypographyCSS.type_scale_subheading_wrapper}>
-          <div className={TypographyCSS.type_scale_subheading}>
-            <SmallHeading text={TypeScaleSubheading.title} />
+        <section className={`${TypographyCSS.type_scale_section} ${TypographyCSS.section}`} id="type-scale">
+          <div className={TypographyCSS.type_scale_heading}>
+            <HeadingDescription info={TypeScaleHeading} />
           </div>
-          <Paragraph text={TypeScaleSubheading.paragraph} />
-        </div>
-        <div className={TypographyCSS.type_scale_card_container_wrapper}>
-          <div className={TypographyCSS.card_containers}>
-            <CardContainer cardInfos={TypeScaleCardsInfo} subText={"FONT SIZE / LINESPACING – CLASSIFICATION"}>
-              <CardTypeScale />
-            </CardContainer>
+          <div className={TypographyCSS.type_scale_subheading_wrapper}>
+            <div className={TypographyCSS.type_scale_subheading}>
+              <SmallHeading text={TypeScaleSubheading.title} />
+            </div>
+            <Paragraph text={TypeScaleSubheading.paragraph} />
           </div>
-        </div>
+          <div className={TypographyCSS.type_scale_card_container_wrapper}>
+            <div className={TypographyCSS.card_containers}>
+              <CardContainer cardInfos={TypeScaleCardsInfo} subText={"FONT SIZE / LINESPACING – CLASSIFICATION"}>
+                <CardTypeScale />
+              </CardContainer>
+            </div>
+          </div>
+        </section>
         <Line />
-      </section>
-      <section className={TypographyCSS.color_section} id="color">
-        <div className={TypographyCSS.color_heading}>
-          <HeadingDescription info={ColorHeading} />
-        </div>
-        <div className={TypographyCSS.color_container_wrapper}>
-          <div className={TypographyCSS.card_containers}>
-            <CardContainer cardInfos={ColorCardsInfo} subText={""}>
-              <CardColor />
-            </CardContainer>
+        <section className={`${TypographyCSS.color_section} ${TypographyCSS.section}`} id="color">
+          <div className={TypographyCSS.color_heading}>
+            <HeadingDescription info={ColorHeading} />
           </div>
-        </div>
+          <div className={TypographyCSS.color_container_wrapper}>
+            <div className={TypographyCSS.card_containers}>
+              <CardContainer cardInfos={ColorCardsInfo} subText={""}>
+                <CardColor />
+              </CardContainer>
+            </div>
+          </div>
+        </section>
         <Line />
-      </section>
-      <section className={TypographyCSS.pairing_section} id="example-pairings">
-        <div className={TypographyCSS.pairing_heading}>
-          <HeadingDescription info={PairingHeading} />
-        </div>
-        <div className={TypographyCSS.pairing_container_wrapper}>
-          <div className={TypographyCSS.pairing_containers}>
-            <CardContainer cardInfos={PairingCardsInfo} subText={""}>
-              <CardPairing />
-            </CardContainer>
+        <section className={`${TypographyCSS.pairing_section} ${TypographyCSS.section}`} id="example-pairings">
+          <div className={TypographyCSS.pairing_heading}>
+            <HeadingDescription info={PairingHeading} />
           </div>
-        </div>
+          <div className={TypographyCSS.pairing_container_wrapper}>
+            <div className={TypographyCSS.pairing_containers}>
+              <CardContainer cardInfos={PairingCardsInfo} subText={""}>
+                <CardPairing />
+              </CardContainer>
+            </div>
+          </div>
+        </section>
         <Line />
-      </section>
-      <section className={TypographyCSS.line_width_section} id="line-width">
-        <div className={TypographyCSS.line_width_heading}>
-          <HeadingDescription info={LineWidthHeading} />
-        </div>
-        <div className={TypographyCSS.line_width_container_wrapper}>
-          <div className={TypographyCSS.line_width_containers}>
-            <CardContainer cardInfos={LineWidthCardsInfo} subText={""}>
-              <CardLineWidth />
-            </CardContainer>
+        <section className={`${TypographyCSS.line_width_section} ${TypographyCSS.section}`} id="line-width">
+          <div className={TypographyCSS.line_width_heading}>
+            <HeadingDescription info={LineWidthHeading} />
           </div>
-        </div>
-      </section>
-      <section className={TypographyCSS.footer}>
-        <Footer />
-      </section>
+          <div className={TypographyCSS.line_width_container_wrapper}>
+            <div className={TypographyCSS.line_width_containers}>
+              <CardContainer cardInfos={LineWidthCardsInfo} subText={""}>
+                <CardLineWidth />
+              </CardContainer>
+            </div>
+          </div>
+        </section>
+        <section className={TypographyCSS.footer}>
+          <Footer />
+        </section>
+      </div>
     </div>
   );
 };

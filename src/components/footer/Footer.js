@@ -8,7 +8,7 @@ import LinkedInIcon from "../../assets/linkedIn.png";
 const Footer = () => {
   return (
     <div className={FooterCSS.container}>
-      <img src={FooterLogo} alt="footer_logo" />
+      <img src={FooterLogo} alt="footer_logo" className={FooterCSS.footer_logo} />
       <div className={FooterCSS.social_media_rights_container}>
         <div className={FooterCSS.social_media_icon_wrapper}>
           <img src={FacebookIcon} alt="facebook_logo" />

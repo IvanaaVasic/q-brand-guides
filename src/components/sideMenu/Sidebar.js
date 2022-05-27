@@ -15,7 +15,6 @@ const Sidebar = () => {
   const toggleMobileNav = () => {
     setIsNavExpanded(!isNavExpanded);
   };
-  console.log(isNavExpanded);
 
   return (
     <div className={MenuCSS.container}>

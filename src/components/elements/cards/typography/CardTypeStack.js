@@ -16,7 +16,7 @@ const CartTypeStack = () => {
         <Paragraph text={info.info_paragraph}></Paragraph>
       </div>
       <div className={CardCSS.type_stack_image_wrapper}>
-        <div className={CardCSS.type_stack_image} style={{ backgroundImage: `url(${info.image})` }}></div>
+        <img src={info.image} alt="type stack" className={CardCSS.type_stack_image} />
       </div>
     </div>
   );

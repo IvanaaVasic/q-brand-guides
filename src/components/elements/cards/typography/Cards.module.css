@@ -27,7 +27,6 @@
 }
 .type_stack_image_wrapper {
   width: 54%;
-  height: 151px;
 }
 .type_stack_image {
   width: 100%;
@@ -125,4 +124,24 @@
 }
 .line_width_heading {
   margin-bottom: 60px;
+}
+@media only screen and (max-width: 660px) {
+  .line_width_wrapper {
+    padding: 60px 0px 41px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  .line_width_heading {
+    text-align: justify;
+  }
+  .line_width_paragraph {
+    text-align: justify;
+  }
+  .type_stack_wrapper {
+    padding: 16px 27px 16px 20px;
+    flex-direction: column;
+  }
+  .type_stack_image_wrapper {
+    width: 100%;
+  }
 }

@@ -4,7 +4,7 @@ import MenuCSS from "./Menu.module.css";
 import { HashLink } from "react-router-hash-link";
 import { VscCircleFilled } from "react-icons/vsc";
 
-const SubMenu = ({ item, setupActiveId, activeState }) => {
+const SubMenu = ({ item, setupActiveId, activeState, setIsNavExpanded, toggleMobileNav }) => {
   const [subnav, setSubnav] = useState(false);
   const showSubnav = () => setSubnav(!subnav);
   const [activeId, setActiveId] = useState();
@@ -20,6 +20,8 @@ const SubMenu = ({ item, setupActiveId, activeState }) => {
   const handleNav = () => {
     if (item.subNav) {
       showSubnav();
+    } else if (!item.subNav) {
+      setIsNavExpanded(false);
     }
     setupActiveId(item.id);
   };
@@ -45,7 +47,10 @@ const SubMenu = ({ item, setupActiveId, activeState }) => {
                 to={item.path}
                 key={index}
                 className={activeId === item.id ? MenuCSS.active_mid_nav : MenuCSS.mid_navigation}
-                onClick={() => setActiveId(item.id)}
+                onClick={() => {
+                  setActiveId(item.id);
+                  toggleMobileNav();
+                }}
               >
                 <span className={activeId === item.id ? MenuCSS.active_bullet_icon : MenuCSS.bullet_icon}>
                   <VscCircleFilled />

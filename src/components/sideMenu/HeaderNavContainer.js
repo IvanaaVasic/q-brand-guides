@@ -2,12 +2,21 @@ import React from "react";
 import MenuCSS from "./Menu.module.css";
 import SubMenu from "./SubMenu";
 
-const HederNavContainer = ({ data, smallNavTTitle, setupActiveId, activeState }) => {
+const HederNavContainer = ({ data, smallNavTTitle, setupActiveId, activeState, setIsNavExpanded, toggleMobileNav }) => {
   return (
     <div className={MenuCSS.header_subheader_container}>
       <p className={MenuCSS.small_navigation}>{smallNavTTitle}</p>
       {data.map((item, index) => {
-        return <SubMenu item={item} key={index} setupActiveId={setupActiveId} activeState={activeState} />;
+        return (
+          <SubMenu
+            item={item}
+            key={index}
+            setupActiveId={setupActiveId}
+            activeState={activeState}
+            setIsNavExpanded={setIsNavExpanded}
+            toggleMobileNav={toggleMobileNav}
+          />
+        );
       })}
       <span className={MenuCSS.line}></span>
     </div>

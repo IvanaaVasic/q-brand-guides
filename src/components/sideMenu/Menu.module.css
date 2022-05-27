@@ -1,6 +1,5 @@
 .container {
-  width: fit-content;
-  height: 100vh;
+  height: fit-content;
   background-color: #ffffff;
   box-shadow: 0px 4px 120px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -8,8 +7,10 @@
   position: sticky;
   top: 0;
 }
-.wrapper{
+.wrapper {
   width: 100%;
+  display: block;
+  height: 100vh;
 }
 .logo {
   margin-bottom: 37px;
@@ -18,7 +19,6 @@
 .header_subheader_container {
   display: flex;
   flex-direction: column;
-
 }
 .small_navigation {
   font-weight: 500;
@@ -38,7 +38,7 @@
   text-decoration: none;
   padding: 15px 0px 15px 40px;
 }
-.navigation:hover{
+.navigation:hover {
   background-color: #fafafa;
   cursor: pointer;
 }
@@ -47,10 +47,9 @@
   width: 100%;
   background-color: #ececec;
 }
-.mid_navigation_wrapper{
+.mid_navigation_wrapper {
   padding-bottom: 15px;
   background-color: #fafafa;
-
 }
 .mid_navigation {
   font-weight: 400;
@@ -63,17 +62,16 @@
   align-items: center;
   text-decoration: none;
   color: #000000;
-
 }
-.mid_navigation:hover{
+.mid_navigation:hover {
   color: #68ac44;
   cursor: pointer;
 }
-.mid_navigation:hover .bullet_icon{
+.mid_navigation:hover .bullet_icon {
   color: #68ac44;
   cursor: pointer;
 }
-.active_mid_nav{
+.active_mid_nav {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -84,20 +82,19 @@
   align-items: center;
   text-decoration: none;
   color: #68ac44;
-
 }
-.active_bullet_icon{
+.active_bullet_icon {
   color: #68ac44;
   font-size: 6px;
   margin-right: 10px;
 }
-.bullet_icon{
+.bullet_icon {
   color: #000000;
   font-size: 6px;
   margin-right: 10px;
 }
 
-.active{
+.active {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -108,7 +105,30 @@
   padding: 15px 0px 15px 40px;
   background-color: #fafafa;
 }
-
+.mobileNav {
+  display: none;
+}
 @media only screen and (max-width: 1800px) {
-
+}
+@media only screen and (max-width: 820px) {
+  .wrapper {
+    display: none;
+  }
+  .wrapper.expanded {
+    display: block;
+  }
+  .mobileNav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  .hamburger {
+    cursor: pointer;
+    font-size: 22px;
+  }
+  .logo {
+    display: none;
+  }
 }

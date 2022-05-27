@@ -4,7 +4,7 @@ import MenuCSS from "./Menu.module.css";
 import { HashLink } from "react-router-hash-link";
 import { VscCircleFilled } from "react-icons/vsc";
 
-const SubMenu = ({ item, setupActiveId, activeState, setIsNavExpanded, toggleMobileNav }) => {
+const SubMenu = ({ item, setupActiveId, activeState, toggleMobileNav }) => {
   const [subnav, setSubnav] = useState(false);
   const showSubnav = () => setSubnav(!subnav);
   const [activeId, setActiveId] = useState();

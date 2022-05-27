@@ -47,7 +47,6 @@ const Sidebar = () => {
           smallNavTTitle={SidebarSmallNav.presentation}
           setupActiveId={setActiveId}
           activeState={activeId}
-          setIsNavExpanded={setIsNavExpanded}
           toggleMobileNav={toggleMobileNav}
         />
       </div>

@@ -13,7 +13,6 @@ const HederNavContainer = ({ data, smallNavTTitle, setupActiveId, activeState, s
             key={index}
             setupActiveId={setupActiveId}
             activeState={activeState}
-            setIsNavExpanded={setIsNavExpanded}
             toggleMobileNav={toggleMobileNav}
           />
         );

@@ -2,6 +2,6 @@
 
 internal project for Quantox branding
 
-## Link too this project
+## Link to this project
 
 https://q-brand-guides.vercel.app/design/typography

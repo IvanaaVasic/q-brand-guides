@@ -1,6 +1,6 @@
 # Q-Brand-Guides
 
-internal project for Quantox branding
+Internal ReactJS project for Quantox branding
 
 ## Link to this project
 
